@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Ranchers&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Ranchers&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Lobster&family=Ranchers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700;900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  width: 100%;
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* .circle{ */
+/* position:absolute; */
+/* width: auto; */
+/* height: auto; */
+/* background: #f15106; */
+/* pointer-events: none; */
+/* transition: 0.2s; */
+/* clip-path: circle( 20px at var(--x) var(--y)); */
+
+/* } */
+
+/* home */
+
+.home {
+  height: 100vh;
+  background-color: #edf5f7;
+  padding: 100px;
+}
+.home .conatiner .content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.home .conatiner .content .box {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.home .conatiner .content .box h1 {
+  /* font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+  justify-content: center; */
+
+  color: #005450;
+
+  font-size: 90px;
+  line-height: 80px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  align-items: center;
+  /* text-align: center; */
+  justify-content: center;
+  display: flex;
+  /* height: 100vh; */
+
+  padding-top: 200px;
+  /* padding-left: 50px; */
+  text-transform: uppercase;
+  font-family: "Source Serif Pro", serif;
+  /* font-family: 'Ranchers', cursive; */
+
+  margin-bottom: 10px;
+}
+
+.home .conatiner .content .box p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 40px;
+  color: #5a908d;
+}
+
+.home .conatiner .content .box .signup {
+  margin-top: 100px;
+}
+.home .conatiner .content .box .signup a {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background: #005450;
+  border: 2px solid #005450;
+  border-radius: 50px;
+  padding: 15px 25px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.home .conatiner .content .box .signup a:hover {
+  background-color: transparent;
+  color: #005450;
+}
+/* .home .conatiner .content .box .register a{
+    font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background: #005450;
+  border: 2px solid #005450;
+  border-radius: 20px;
+  padding: 10px 15px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+} */
+.home .conatiner .content .box .img img {
+  width: 100%;
+  /* background-position: center; */
+  align-items: center;
+  height: 80vh;
+}
+
+/* go down */
+
+.home .conatiner .content .go-down {
+  position: absolute;
+  bottom: 50px;
+  width: 30px;
+  height: 40px;
+  border: 2px solid #005450;
+  display: block;
+  border-radius: 10px;
+  text-align: center;
+  left: 50%;
+  margin-left: -13px;
+}
+.home .conatiner .content .go-down .fa {
+  color: #005450;
+  font-size: 15px;
+  font-weight: 600;
+  -webkit-animation: goDown 1s ease infinite;
+  animation: goDown 0.5s ease infinite;
+}
+@keyframes goDown {
+  0% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+/* about */
+
+.about {
+  height: 140vh;
+  padding: 100px;
+}
+.about .content h1 {
+  color: #004d49;
+  font-size: 70px;
+  line-height: 80px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  /* height: 100vh; */
+
+  text-transform: uppercase;
+  font-family: "Source Serif Pro", serif;
+  /* font-family: 'Ranchers', cursive; */
+
+  margin-bottom: 10px;
+}
+.about .content h2 {
+  color: #138a6e;
+  font-size: 3.3rem;
+  line-height: 90px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  /* height: 100vh; */
+
+  text-transform: uppercase;
+  font-family: "Source Serif Pro", serif;
+  /* font-family: 'Ranchers', cursive; */
+
+  margin-bottom: 10px;
+}
+.about .content h3 {
+  color: #004d49;
+  font-size: 4rem;
+  line-height: 50px;
+  font-weight: 600;
+  /* letter-spacing: 1px; */
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  /* height: 100vh; */
+
+  padding-top: 150px;
+  font-family: "Source Serif Pro", serif;
+  /* font-family: 'Ranchers', cursive; */
+
+  margin-bottom: 10px;
+}
+.about .content h5 {
+  color: #004d49;
+  font-size: 2rem;
+  line-height: 50px;
+  font-weight: 600;
+  /* letter-spacing: 1px; */
+  text-align: center;
+  padding-top: 50px;
+
+  font-family: "Source Serif Pro", serif;
+
+  margin-bottom: 10px;
+}
+.about .content p {
+  color: #004d49;
+  font-size: 17px;
+  /* line-height: 10px; */
+  font-weight: 500;
+  /* letter-spacing: 1px; */
+  text-align: center;
+  padding-top: 10px;
+
+  font-family: "Source Serif Pro", serif;
+
+  margin-bottom: 10px;
+}
+
+.about .content .box {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  padding-top: 80px;
+  position: relative;
+}
+
+.about .content .box .text {
+  flex: 0 0 calc(25% - 15px);
+  max-width: calc(25% - 15px);
+  position: relative;
+  /*border:1px solid #000;*/
+  /* background-color: #EDF5F7; */
+  padding: 30px;
+}
+
+.about .content .box .text h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-top: 100px;
+  text-transform: uppercase;
+  /* padding:20px; */
+  color: #004d49;
+}
+
+.about .content .box .text h3 span {
+  color: #004d49;
+}
+
+.about .content .box .text h2 {
+  position: absolute;
+  top: 80px;
+  right: 10px;
+  margin: 0;
+  text-align: center;
+  padding: 0;
+  font-size: 10em;
+  color: rgb(37 121 116 / 44%);
+  transition: 0.5s;
+}
+.about .content .box .text:hover h2 {
+  top: -30px;
+}
+
+.about .content .box .text p {
+  padding-top: 10px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #004d49;
+  font-weight: 400;
+}
+
+.about .content .box .text .img img {
+  width: 100%;
+  visibility: hidden;
+  transform: translateY(-100px);
+  transition: all 0.5s ease;
+}
+
+.about .content .box .text:hover .img img {
+  transform: translateY(-00px);
+  opacity: 1;
+  visibility: visible;
+}
+
+/* contact */
+
+/* contact */
+
+.contact {
+  padding: 100px;
+  background-color: #1f0d5d;
+}
+/* .contact .content h1{
+	font-size: 40px;
+	font-weight: 600;
+	text-align: center;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-family: 'Potta One', cursive;
+	margin-bottom:60px ;
+
+
+} */
+.contact .content img {
+  position: relative;
+}
+.contact .box {
+  display: flex;
+  justify-content: space-between;
+}
+.contact .box .box-text {
+  flex: 0 0 calc(50% - 30px);
+  max-width: calc(50% -30px);
+}
+.contact .box .box-text h1 {
+  top: 50%;
+  left: 50%;
+  font-size: 60px;
+  font-weight: 700;
+  color: #f8f4f4;
+  text-align: center;
+  /* align-items: center; */
+  /* display: center; */
+  /* justify-content: center; */
+}
+.contact .box .box-text .box-contact {
+  border: 1px solid #c4ac8c;
+  padding: 50px 60px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+/* .contact .box .box-text .box-contact:hover{
+	padding: 60px 70px;
+
+} */
+
+.contact .box .box-text .box-contact form {
+  display: block;
+}
+
+.contact .box .box-text .box-contact form input {
+  padding: 10px 15px;
+  font-size: 15px;
+  margin: 30px 0px;
+  border-radius: 10px;
+  width: 100%;
+  display: block;
+  background-color: #eeeeee;
+  border: transparent;
+	outline: none;
+
+}
+
+.contact .box .box-text .box-contact form p {
+  /* padding-bottom: 30px; */
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.contact .box .box-text .box-contact form textarea {
+  padding: 10px 15px;
+  font-size: 15px;
+  margin: 30px 0px;
+  border-radius: 10px;
+  width: 100%;
+  display: block;
+  background-color: #eeeeee;
+  border: transparent;
+	outline: none;
+
+}
+.contact .box .box-text .box-contact form button {
+  padding: 15px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #1f0d5d;
+  cursor: pointer;
+  /* margin-top:20px ; */
+  color: #ffffff;
+  border: transparent;
+  border-radius: 10px;
+  box-shadow: -5px 30px 20px -20px rgba(86, 93, 113, 0.38);
+  transition: 0.4s;
+}
+
+.contact .box .box-text .box-contact form button:hover {
+  background-color: #4646fe;
+  border: transparent;
+
+  box-shadow: -5px 30px 20px -20px rgba(53, 71, 121, 0.38);
+  transform: translateY(-10px);
+}
+
+/* copy-right */
+
+/* .copy-right h5{
+  text-align: center;
+  font-size: 10px;
+  font-weight: 500;
+
+
+} */
+
+/* copy-right */
